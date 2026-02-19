@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: chill-pickle-gma-backend
+    env: node
+    rootDir: .
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
